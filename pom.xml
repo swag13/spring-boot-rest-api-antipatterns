@@ -14,7 +14,7 @@
 	<name>spring-boot-rest-api-antipatterns</name>
 	<description>spring-boot-rest-api-antipatterns</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

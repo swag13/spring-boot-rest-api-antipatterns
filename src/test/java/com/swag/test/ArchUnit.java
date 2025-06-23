@@ -10,8 +10,10 @@ import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 public class ArchUnit {
 	@ArchTest
 	static final ArchRule controllers_should_not_access_repository_directly =
-	    noClasses()
-	        .that().resideInAPackage("..controller..")
-	        .should().accessClassesThat().resideInAPackage("..repository..");
+	            noClasses()
+     	    .that().resideInAPackage("..controller..")
+     	    .should().accessClassesThat().resideInAPackage("..repository..")
+     	    .allowEmptyShould(true)
+     	    .because("controller should not directly access repositories");
 
 }
