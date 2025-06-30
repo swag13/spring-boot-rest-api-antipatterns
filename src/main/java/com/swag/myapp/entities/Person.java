@@ -50,7 +50,6 @@ public class Person {
     @Column(name="phone_number")
     private Set<String> phones;
 
-    public Person() {}
 
     public Person(String name, String email, String password,
                   LocalDate dob, boolean active, Set<String> phones) {

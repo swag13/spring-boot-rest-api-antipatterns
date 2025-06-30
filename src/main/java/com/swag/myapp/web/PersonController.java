@@ -1,7 +1,7 @@
 package com.swag.myapp.web;
 
-import com.swag.myapp.entities.Person;
-import com.swag.myapp.services.PersonService;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import com.swag.myapp.entities.Person;
+import com.swag.myapp.services.PersonService;
 
 @RestController
 public class PersonController {
